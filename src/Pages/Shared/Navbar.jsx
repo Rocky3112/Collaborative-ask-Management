@@ -42,6 +42,9 @@ const Navbar = () => {
                 <Link to="/allTask">All Task</Link>
               </li>
               <li>
+              <Link to="/contact">Contact</Link>
+              </li>
+              <li>
                 <Link to="/profile">My Profile</Link>
               </li>
               
@@ -73,6 +76,9 @@ const Navbar = () => {
               </li>
               <li>
               <Link to="/allTask">All Task</Link>
+              </li>
+              <li>
+              <Link to="/contact">Contact</Link>
               </li>
               <li>
               <Link to="/profile">My Profile</Link>

@@ -6,6 +6,8 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Profile from "../Pages/Profile/Profile";
 import Home from "../Pages/Home/Home";
 import AllTask from "../Pages/AllTask/AllTask";
+import PrivateRoute from "./PrivateRoute";
+import Contact from "../Pages/Contact/Contact";
 
 
 export const router = createBrowserRouter([
@@ -27,13 +29,17 @@ export const router = createBrowserRouter([
         element: <SignUp></SignUp>,
       },
       {
+        path: "contact",
+        element: <Contact></Contact>,
+      },
+      {
         path: "profile",
-        element:<Profile></Profile>,
+        element:<PrivateRoute><Profile></Profile></PrivateRoute>,
         
       },
       {
         path: "allTask",
-        element:<AllTask></AllTask>,
+        element:<PrivateRoute><AllTask></AllTask></PrivateRoute>,
         // loader: fetch('http://localhost:5000/tasks')
         
       },
