@@ -1,0 +1,42 @@
+/* TaskForm.css */
+
+.task-form {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border to the form */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow to the form */
+  }
+  
+  .form-field {
+    margin-bottom: 20px; /* Add spacing between form fields */
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Add a border to input fields */
+    border-radius: 3px; /* Add rounded corners to input fields */
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change the border color on focus */
+  }
+  
+  .submit-button {
+    background-color: #007bff; /* Set the button background color */
+    color: #fff; /* Set the button text color */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Change the button color on hover */
+  }
+  
