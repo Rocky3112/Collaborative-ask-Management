@@ -41,7 +41,7 @@ function TaskForm() {
     return (
         <div className=" py-24">
             <h2 className="text-center text-3xl font-semibold pb-4">Create a New Task</h2>
-            <form onSubmit={handleSubmit(onSubmit)} className="task-form">
+            <form onSubmit={handleSubmit(onSubmit)} className="task-form shadow-2xl bg-slate-200">
                 <div className="form-field">
                     <label htmlFor="title">Title:</label>
                     <input
