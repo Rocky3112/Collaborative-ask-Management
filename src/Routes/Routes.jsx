@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
       {
         path: "allTask",
         element:<AllTask></AllTask>,
-        loader: fetch('http://localhost:5000/tasks')
+        // loader: fetch('http://localhost:5000/tasks')
         
       },
      
