@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/instractors">Instractors</Link>
+                <Link to="/allTask">All Task</Link>
               </li>
               <li>
                 <Link to="/profile">My Profile</Link>
@@ -62,17 +62,17 @@ const Navbar = () => {
             
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl">
-            Sports <span className=" text-orange-500">Camp</span>
+          <a className="btn btn-ghost text-slate-800 text-3xl">
+          Task Management 
           </a>
         </div>
         <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 text-base">
+          <ul className="menu menu-horizontal px-1 text-slate-800 text-lg">
           <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/instractors">Instractors</Link>
+              <Link to="/allTask">All Task</Link>
               </li>
               <li>
               <Link to="/profile">My Profile</Link>
@@ -94,9 +94,9 @@ const Navbar = () => {
             
           </ul>
         </div>
-        <div className="navbar-end">
+        {/* <div className="navbar-end">
           <a className="btn btn-outline border-white text-white hover:bg-white hover:text-black">Button</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
