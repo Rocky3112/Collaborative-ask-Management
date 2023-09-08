@@ -7,7 +7,7 @@ const AllTask = () => {
   const [sortOrder, setSortOrder] = useState("asc"); 
 
   useEffect(() => {
-    fetch(`https://collaborative-task-management-server.vercel.app/tasks`)
+    fetch(`https://collaborative-task-management-server.vercel.app/task`)
       .then(res => res.json())
       .then(data => {
         setTasks(data);
