@@ -13,7 +13,7 @@ function TaskForm() {
     const onSubmit = (data) => {
         console.log("Task data:", data);
 
-        fetch("http://localhost:5000/tasks", {
+        fetch("https://collaborative-task-management-server.vercel.app/tasks", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

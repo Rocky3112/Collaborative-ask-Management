@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import { Fade, Zoom } from 'react-awesome-reveal';
 import Lottie from "lottie-react";
-import contact from '../../../public/contact.json'
+import contact from './contact.json'
 
 const Contact = () => {
     const form = useRef();

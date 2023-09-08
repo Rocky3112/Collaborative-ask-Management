@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
       {
         path: "allTask",
         element:<PrivateRoute><AllTask></AllTask></PrivateRoute>,
-        // loader: fetch('http://localhost:5000/tasks')
+        // loader: fetch(' https://collaborative-task-management-server.vercel.app/tasks')
         
       },
      

@@ -3,11 +3,11 @@ import Task from "./task";
 
 const AllTask = () => {
   const [tasks, setTasks] = useState([]);
-  const [sortBy, setSortBy] = useState(null); // State to track the sorting criteria
-  const [sortOrder, setSortOrder] = useState("asc"); // State to track the sorting order (asc or desc)
+  const [sortBy, setSortBy] = useState(null); 
+  const [sortOrder, setSortOrder] = useState("asc"); 
 
   useEffect(() => {
-    fetch('http://localhost:5000/tasks')
+    fetch(`https://collaborative-task-management-server.vercel.app/tasks`)
       .then(res => res.json())
       .then(data => {
         setTasks(data);
@@ -45,7 +45,7 @@ const AllTask = () => {
   return (
     <div className="py-24 ">
         <div className="px-16">
-        <button className="btn bg-slate-500 text-white hover:bg-green-500 my-2"  onClick={sortByPriority}>Sort by Priority ({sortOrder === "asc" ? "Low to High" : "High to Low"})</button><br />
+        <button className="btn bg-slate-500 text-white hover:bg-green-500 my-2 mx-2"  onClick={sortByPriority}>Sort by Priority ({sortOrder === "asc" ? "Low to High" : "High to Low"})</button>
         <button className="btn bg-slate-500 text-white hover:bg-green-500" onClick={sortByDueDate}>Sort by Due Date ({sortOrder === "asc" ? "Earliest to Latest" : "Latest to Earliest"})</button>
       </div>
         <div className="grid lg:grid-cols-2 gap-10 py-10 px-5">
